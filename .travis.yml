@@ -24,4 +24,4 @@ deploy:
   provider: heroku
   app: dl-homepage # see README
   api_key:
-    secure: YOUR-***ENCRYPTED***-API-KEY-HERE # see README
+    secure: oRUb960d55dstzWnWWObxAf/ApmnF0R0JT1fn/AfZsaq921zAMxF++3pS82r/A/QKOCChzI1MzWkupaBcgo3jFu8EQs0x9/fqIWUJ7gMJNHYFwLMzx/jcdhx9q/N4tnTzOI9YHyctOa1jhFKeUvL89kPW07Sae40iBDSTTSB7X2lYwFrnERgYPRkytA06ofaq5pSudeM/M7ILD05VvcF8pLuk60BcZZJqpTw23Sl8s9KIG4IENhCvY+FBtr7GL/0DBHjPygPUk2Obw7o5sHdSMg1tk+MyZ7GP9dsTtzmhh6piKKfyn1RGj1ST5mGBArqtotkuBt8sDl2IyDqzJ/Hpj0lbiHTfbeTduunogCCoyPKIhzXtizmqzyYPQYyNBDtLLGg7SmsKq4BLLQO5hved1VtEOdWT2yEmrJ6lDgyItxHpJjv/l/id/MEkaAdz2u7J3UqWjtZr7aCk6mwO3Xsm9JIFdgef82ixUZ7UpZsDA+TIQFmo2JyR+yYgLb0C84UaG+32RLMRuBgE6W+GxbigciPtX9K9aFHYl0sKqpSjZYmfbZ2WiKUjYjmXR+wwxHb20yyXpuA69EhIO5j6Ze0qNjPxQywJP/fATw2ubIg0XwUvoHrZWk1TdGfy9+Z0SpH3Bk5RFHR72HwD2BCHD6gibm429MxaEjtllnqZ60mFLc= # see README
