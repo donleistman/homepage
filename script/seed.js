@@ -1,7 +1,7 @@
 'use strict'
 
 const db = require('../server/db')
-const {User} = require('../server/db/models')
+const {Folder, Item, User} = require('../server/db/models')
 
 async function seed() {
   await db.sync({force: true})
@@ -12,7 +12,28 @@ async function seed() {
     User.create({email: 'murphy@email.com', password: '123'})
   ])
 
+  const items = await Promise.all([
+    Item.create({
+      title: 'Paul Manafort Agrees to Cooperate With Special Counsel',
+      url: 'https://www.nytimes.com/2018/09/14/us/politics/manafort-plea-deal.html',
+      userId: 3
+    }),
+    Item.create({
+      title: 'Massachusetts Residents Told to Stay Away From Homes After Gas Explosions and Fires',
+      url: 'https://www.nytimes.com/2018/09/14/us/massachusetts-gas-explosions-fires.html',
+      userId: 3
+    })
+  ])
+
+  const folders = await Promise.all([
+    Folder.create({title: 'Folder 1', userId: 3}),
+    Folder.create({title: 'Folder 2', userId: 3})
+  ])
+
+
   console.log(`seeded ${users.length} users`)
+  console.log(`seeded ${items.length} items`)
+  console.log(`seeded ${folders.length} folders`)
   console.log(`seeded successfully`)
 }
 

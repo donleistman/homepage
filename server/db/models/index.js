@@ -9,6 +9,9 @@ const User = require('./user');
  *    BlogPost.belongsTo(User)
  */
 
+Item.belongsTo(User);
+Folder.belongsTo(User );
+
 Item.belongsTo(Folder);
 Folder.belongsTo(Folder);
 
